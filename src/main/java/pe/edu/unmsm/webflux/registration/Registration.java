@@ -9,6 +9,7 @@ import pe.edu.unmsm.webflux.course.Course;
 import pe.edu.unmsm.webflux.student.Student;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Builder(toBuilder = true)
@@ -21,7 +22,7 @@ public class Registration {
 
     private LocalDateTime date;
     private Student student;
-    private Course course;
+    private List<Course> courses;
     private Boolean status;
 
 }
